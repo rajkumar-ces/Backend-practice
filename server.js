@@ -19,4 +19,7 @@ app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, "views", "error-page.html"));
 });
 
+// app.use(express.static(path.join(__dirname, ''))); => Create a public folder and place all the static folders
+// inside this public folder. We can define its path with the above way. eg : css can be kept in common file
+
 app.listen(3000);
